@@ -1,0 +1,56 @@
+---
+---
+:root {
+  --brand-color: {{ site.brand_color | default: '#0066cc' }};
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+.topnav {
+  background: var(--brand-color);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.topnav a {
+  color: inherit;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  left: 0;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  background: #fff;
+  padding: 1rem;
+}
+
+.sidebar {
+  width: 15rem;
+}
+
+.sidebar.open {
+  display: block;
+}
+
+.sidebar-toggle {
+  background: none;
+  border: none;
+}

@@ -1,0 +1,10 @@
+title: Anodyne Pages
+description: Shared Jekyll theme for Anodyne docs
+brand_color: "#0066cc"
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - node_modules
+  - vendor

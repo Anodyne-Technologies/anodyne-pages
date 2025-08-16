@@ -1,0 +1,8 @@
+<nav class="topnav" aria-label="Primary">
+  <a class="brand" href="{{ '/' | relative_url }}">{{ site.title | default: 'Docs' }}</a>
+  <ul class="nav-links">
+    {% for item in site.data.nav %}
+    <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
