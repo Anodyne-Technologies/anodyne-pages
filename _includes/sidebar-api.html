@@ -1,0 +1,8 @@
+<aside class="sidebar" id="sidebar">
+  <button class="sidebar-toggle" data-toggle="sidebar" aria-expanded="false">Menu</button>
+  <nav class="sidebar-nav" aria-label="API navigation">
+    {% for item in site.data.nav %}
+    <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+    {% endfor %}
+  </nav>
+</aside>
